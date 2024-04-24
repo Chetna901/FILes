@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  header{
+    text-align:left;
+    display: flex;
+    margin: 0%;
+    height: 0%;
+    background: black;
+
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    margin-left:50px;
+    margin-right: 50px;
+
+
+  }
+  .nav ul{
+    display: flex;
+    order: 2;
+  }
+  .nav ul a{
+    color: black;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+  }
+  
+  .hero {
+    background-image: url('hero-bac.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  

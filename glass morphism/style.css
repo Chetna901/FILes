@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    list-style: none;
+    font-family:sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 200vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: black;
+    align-items: center;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background: linear-gradient(green, red);
+    transform: translate(-440px,150px);
+}.container::after{
+    content: '';
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background: linear-gradient(green,orange);
+    transform: translate(440px,50px);
+}
+.container  .ball-1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: green;
+    transform: translate(-250px,200px);
+    position: absolute;
+}
+.container  .ball-2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: blue;
+    transform: translate(-100px,50px);
+    position: absolute;
+}
+.container .ball-3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: brown;
+    transform: translate(980px,5px);
+    position: absolute;
+}
+.container .box{
+    height: 80vh;
+    width: 130vh;
+    padding: 0 ,20px;
+    background: rgba(255,255,255,0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.7);
+    backdrop-filter:blur(25px) ;/*important!!*/
+    box-shadow: -15px,17px 17px rgba(10,10,10,0.25);
+}
+.container .box .nav{
+    height: 6%;
+    width: 9.5%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+   
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+.container .box nav ul li a{
+    font-size: 11px;
+    cursor: pointer;
+
+}
+.container .box nav ul li a:hover{
+    color:red;
+
+
+}
+.container.box nav.logo{
+    font-size: 35px;
+    color:black;
+    margin-top: 60px;
+    margin-left:50px;
+}
+
+.container .box .container{
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    height: 50%;
+    position: absolute;
+      margin-top: 8%;
+    padding-left: 80%;
+}
+.container .box .contain .section-1{
+    position:absolute;
+    margin-top: 40px;
+    justify-content: center;
+}
+.container .box .contain .section-1 h1{
+    font-size: 30px;
+}
+.container .box .contain .section-1 h3{
+    font-size: 30px;
+}
+
+.container .box .contain .section-1 p{
+margin-top: 5px;
+}
+.container  .contain .section-1 .button a{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: left;
+    width: 20vh;
+    padding: 0px 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    
+    }
+    .container  .contain .section-1 .button{
+        margin-top: 30px;
+    }
+
+  
+    .container .box .contain .section-1 .button a:hover{
+        background-color: aqua;
+        color: black;
+        box-shadow:  0 0 5px  aqua,
+         0 0  25px  aqua,
+        0 0  50px aqua,
+       0 0  200px blue;
+       font-size: 16px; /*change it */
+       -webkit-box-reflect:below 5px linear-gradient(transparent,#0005) ;
+    }
+    a:first-child
+    {
+        filter: hue-rotate(225deg);
+    }
+    .box a span{
+        position: absolute;
+        display: block;
+    }
+    .container .box .contain .section-2 img{
+        width: 250px;
+        height: 120px;
+        transform: translate(-5px,30px);
+        
+
+    }
+    span{
+        color: red;
+        font-size: 40px;
+    }
+
+    
